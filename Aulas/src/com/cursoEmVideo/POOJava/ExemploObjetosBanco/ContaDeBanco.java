@@ -56,30 +56,48 @@ public class ContaDeBanco {
         setTipo(t);
         setStatus(true);
 
-        if (t == "CC") {
-
-        }
-        //se for CC ganhar 50 reais
-        //se for CP ganah 150,00
+        if (t == "CC")
+            setSaldo(50);
+        else
+            setSaldo(150);
     }
     public void fecharConta() {
-        if (setSaldo(saldo) > 0) {
+        if (saldo > 0)
+            System.out.println("Conta com dinheiro");
+        else if (saldo < 0)
+            System.out.println("Conta em débito!");
+        else
+            setStatus(false);
+    }
+    public void depositar(float v) {
+        if (status == true)
+            setSaldo(getSaldo() + v);
+        else
+            System.out.println("Impossivel depositar em uma conta inexistente");
+    }
+    public void sacar(float v) {
+        if (status == true) {
+            if (saldo > v)
+                setSaldo(getSaldo() - v);
+            else
+                System.out.println("Saldo insuficiente");
+        } else
+            System.out.println("Conta inexistente, impossível sacar");
+    }
+    public void pagarMensal() {
+        float v;
 
-        }
-        status = false;
-        //se tiver dinheiro tem que sacar
-        //se tiver devendo não fecha a conta
-    }
-    public depositar() {
-        //status tem que ser true
-    }
-    public sacar() {
-        //status tem que ser true
-        //e tem que ter saldo
-    }
-    public pagarMensal() {
-        //mensalidade sendo cobrado diretamente do saldo
-        //CC 12,00
-        //CP 20,00
+        if (tipo == "CC")
+            v = 12;
+        else
+            v = 20;
+
+        if (status == true) {
+            if (saldo > v)
+                setSaldo(getSaldo() - v);
+            else
+                System.out.println("Saldo Insuficiente");
+        } else
+            System.out.println("Conta inexistente!");
     }
 }
