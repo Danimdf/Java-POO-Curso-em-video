@@ -19,10 +19,14 @@ public class ContaBanco {
         setTipo(t);
         setStatus(true);
 
-        if (t == "CC")
+        if (t == "CC"){
             setSaldo(50);
-        else
+            System.out.println("Conta aberta com sucesso!");
+        }
+        else {
             setSaldo(150);
+            System.out.println("Conta aberta com sucesso!");
+        }
     }
     public void fecharConta() {
         if (saldo > 0)
