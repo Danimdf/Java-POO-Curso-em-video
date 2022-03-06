@@ -1,4 +1,4 @@
-package com.cursoEmVideo.POOJava.ExemploObjetosBanco;
+package com.cursoEmVideo.POOJava.Aula5Bank;
 
 public class ContaBanco {
     public int numConta;

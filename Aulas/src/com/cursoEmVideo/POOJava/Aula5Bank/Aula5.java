@@ -1,4 +1,4 @@
-package com.cursoEmVideo.POOJava.ExemploObjetosBanco;
+package com.cursoEmVideo.POOJava.Aula5Bank;
 
 public class Aula5 {
     public static void main (String[] args) {
