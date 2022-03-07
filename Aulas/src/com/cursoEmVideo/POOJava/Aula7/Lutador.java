@@ -22,7 +22,7 @@ public class Lutador implements Ficha{
         this.empates = empates;
     }
 
-    private String getNome() {
+    public String getNome() {
         return nome;
     }
 
@@ -63,7 +63,7 @@ public class Lutador implements Ficha{
         this.setCategoria();
     }
 
-    private String getCategoria() {
+    public String getCategoria() {
         return categoria;
     }
 

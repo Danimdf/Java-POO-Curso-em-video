@@ -10,12 +10,10 @@ public class aula7 {
         l[4] = new Lutador ("Pretty Boy", "França", 31, 1.75f, 68.9f, 11, 3 ,1);
         l[5] = new Lutador ("Pretty Boy", "França", 31, 1.75f, 68.9f, 11, 3 ,1);
 
-        l[0].status();
-        l[1].status();
-        l[2].status();
-        l[3].status();
-        l[4].status();
-        l[5].status();
+        Luta luta1 = new Luta();
+        luta1.marcarLuta(l[0], l[1]);
+        luta1.lutar();
 
     }
+
 }
