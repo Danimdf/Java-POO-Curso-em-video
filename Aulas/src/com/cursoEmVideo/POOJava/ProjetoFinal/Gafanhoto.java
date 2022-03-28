@@ -4,6 +4,14 @@ public class Gafanhoto extends Pessoa {
     private String login;
     private int totAssistido;
 
+    public int getTotAssistido() {
+        return totAssistido;
+    }
+
+    public void setTotAssistido(int totAssistido) {
+        this.totAssistido = totAssistido;
+    }
+
     public void viuMaisUm() {
         this.totAssistido++;
     }

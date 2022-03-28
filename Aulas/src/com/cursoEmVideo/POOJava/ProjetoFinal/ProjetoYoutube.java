@@ -14,6 +14,9 @@ public class ProjetoYoutube {
         g[1] = new Gafanhoto("Tiago", 44, "M", "Tiago2000");
         g[2] = new Gafanhoto("Gatinho", 5, "*", "gatinho123");
 
+        Visualizacao visu = new Visualizacao(g[0], v[2]);
+
+        System.out.println(visu.toString());
         System.out.println(g[1].toString());
         System.out.println(v[0].toString());
     }
